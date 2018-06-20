@@ -15,7 +15,7 @@ for i in range(0, k):
             U.append(j)
     print U
     for j in range(0, len(U)):
-        s.append(U[j])
+        s.append(U[j] % n)
         aux = 2
         while(not ((U[j]**aux) % n == 1)):
             s.append((U[j] ** aux) % n)
